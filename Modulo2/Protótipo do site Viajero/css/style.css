@@ -1,0 +1,40 @@
+.navbar {
+    background-image: linear-gradient(135deg, #4b79dd, #70d6f0);
+    font-weight: bold;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-image: linear-gradient(135deg,  #70d6f0 , #4b79dd);
+}
+
+.conteudo {
+    max-width: 800px;
+    text-align: center;
+}
+
+.destaque{
+    color: azure;
+    
+}
+
+.carousel-inner {
+    max-height: 500px; 
+}
+
+.carousel-item img {
+    max-height: 500px; 
+    margin: auto;
+}
+
+#rodape {
+    text-align: center;
+}
+
+#formas_pagamento {
+    color: #e60b0b;
+    font-weight: bold;
+}
