@@ -33,20 +33,23 @@ Inicio
 
       leia (opcao)
       escolha opcao
-      caso 1
+         caso 1
+            escreval("")
             escreval("Informe o nome completo do cliente:")
             leia(nomeCliente)
             escreval("Informe o CPF do cliente:")
             leia(cpfCliente)
 
             qtdClientes <- qtdClientes + 1
-            
+
             nomesClientes[qtdClientes] <- nomeCliente
             cpfsClientes[qtdClientes] <- cpfCliente
-            
+
+            escreval("")
             escreval("Cliente cadastrado!")
             escreval("")
-      caso 2
+         caso 2
+            escreval("")
             escreval("Informe o nome do destino:")
             leia(nomeDestino)
             escreval("Informe o valor do destino:")
@@ -57,39 +60,43 @@ Inicio
             nomesDestinos[qtdDestinos] <- nomeDestino
             precosDestinos[qtdDestinos] <- precoDestino
 
+            escreval("")
             escreval("Destino cadastrado!")
             escreval("")
-      caso 3
-         se qtdClientes = 0 então
-            escreval("Não há clientes cadastrados!")
-         senão
-            escreval("***** Tabela de Clientes ******")
-            para i de 1 ate qtdClientes faca
-                escreval("Nome: ", nomesClientes[i])
-                escreval("CPF: ", cpfsClientes[i])
-                escreval("-------------------------------")
-            fimpara
-            escreval("*******************************")
-         fimse
-         escreval("")
-      caso 4
-         se qtdDestinos = 0 então
-            escreval("Não há destinos cadastrados!")
-         senão
-            escreval("***** Tabela de Destinos ******")
-            para i de 1 ate qtdDestinos faca
-                escreval("Nome: ", nomesDestinos[i])
-                escreval("Preço: ", precosDestinos[i])
-                escreval("-------------------------------")
-            fimpara
-            escreval("*******************************")
-         fimse
-         escreval("")
-      caso 5
-         escreval("Fim da execução do programa")
-         interrompa
-      outrocaso
-         Escreva("Opção inválida")
+         caso 3
+            escreval("")
+            se qtdClientes = 0 então
+               escreval("Não há clientes cadastrados!")
+            senão
+               escreval("***** Tabela de Clientes ******")
+               para i de 1 ate qtdClientes faca
+                  escreval("Nome: ", nomesClientes[i])
+                  escreval("CPF: ", cpfsClientes[i])
+                  escreval("-------------------------------")
+               fimpara
+               escreval("*******************************")
+            fimse
+            escreval("")
+         caso 4
+            escreval("")
+            se qtdDestinos = 0 então
+               escreval("Não há destinos cadastrados!")
+            senão
+               escreval("***** Tabela de Destinos ******")
+               para i de 1 ate qtdDestinos faca
+                  escreval("Nome: ", nomesDestinos[i])
+                  escreval("Preço: ", precosDestinos[i])
+                  escreval("-------------------------------")
+               fimpara
+               escreval("*******************************")
+            fimse
+            escreval("")
+         caso 5
+            interrompa
+         outrocaso
+            escreval("")
+            escreval("Opção inválida")
+            escreval("")
       fimescolha
    ate opcao = 5
 
