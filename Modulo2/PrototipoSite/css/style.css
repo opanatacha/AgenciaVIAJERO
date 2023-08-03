@@ -119,6 +119,10 @@
     height: 600px; 
 }
 
+.card-custom {
+    
+    text-shadow:0 0 3px #0e0d0d , 0 0 2px #121213;
+}
   
 footer {
     background-color: #FAC102;
