@@ -1,7 +1,7 @@
 <h1 align="center"> Website VIAJERO </H1>
 
 <h1 align="center">
-      <img alt="logoNova" title="NOVA" src="https://github.com/eu1natacha/RecodePro2023/blob/main/PrototipoSite/img/logoteste.png" width="200vw"/>
+      <img alt="logoNova" title="NOVA" src="https://github.com/eu1natacha/AgenciaVIAJERO/blob/main/img/logoteste.png" width="200vw"/>
 </h1>
 
 <h4 align="center"> :construction: Projeto em construção :construction: </h4>
