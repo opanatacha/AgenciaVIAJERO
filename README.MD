@@ -96,11 +96,15 @@ Esse é um projeto de website de agência de viagens, desenvolvido durante o cur
 -   **JavaScript**
 
 ### **Backend** 
--  (Em breve)
+-  **Java**
+-  **SQL**
 
 ### **Banco de dados** 
-- (Em breve)
-
+Modelo Conceitual:
+![ModeloConceitual](https://github.com/eu1natacha/AgenciaVIAJERO/blob/main/db/Modelo_Conceitual.png)
+<br><br>
+Modelo lógico:
+![ModeloLogico](https://github.com/eu1natacha/AgenciaVIAJERO/blob/main/db/Modelo_Logico.png)
 <br><br>
 
  ## 👩🏽‍💻👩🏽‍💻 Autora 👨🏽‍💻👩🏽‍💻
