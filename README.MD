@@ -97,6 +97,8 @@ Esse é um projeto de website de agência de viagens, desenvolvido durante o cur
 
 ### **Backend** 
 -  **Java**
+	- Tomcat Apache
+	- Servlet
 -  **SQL**
 
 ### **Banco de dados** 

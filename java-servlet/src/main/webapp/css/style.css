@@ -1,0 +1,210 @@
+.barra-central {
+    background-image: linear-gradient(135deg, #70d6f0, #4b79dd);
+}
+
+.navbar {
+    background-image: linear-gradient(135deg, #4b79dd, #70d6f0);
+}
+
+.nome-marca {
+    font-family: 'Franklin Gothic Medium';
+}
+
+.body-estilo {
+  background: url("../img/wallpapperBody2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*
+.body-estilo{
+    background-color: #101111;
+}
+*/
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    /* background-image: linear-gradient(135deg, #70d6f0, #4b79dd); */
+    margin-bottom: 10px;
+}
+
+.centralizar-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-pesquisa{
+    background-image: linear-gradient(135deg, #70d6f0, #4b79dd); 
+}
+
+.conteudo {
+    max-width: 800px;
+    text-align: center;
+}
+
+.destaque {
+    color: azure;
+}
+
+.carousel-inner {
+    max-height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    margin: auto;
+}
+
+
+@media (min-width: 576px) {
+
+    .card {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .card {
+        margin: 15px;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .card {
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .card {
+        margin: 30px;
+    }
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.pacote-descricao {
+    font-size: 14px;
+    color: #555;
+}
+
+.pacote-preco-antigo {
+    font-size: 12px;
+    color: #cc1010;
+    text-decoration: line-through;
+}
+
+.pacote-preco-atual {
+    font-size: 18px;
+    color: rgb(3, 139, 9);
+    font-weight: bold;
+}
+
+.formulario{
+    border-radius: 10px; 
+    margin-bottom: 40px;
+}
+
+.botao-form{
+    border-radius: 10px; 
+    width: 30%; 
+    margin: 20px auto;
+}
+
+.container-form {
+    margin-top: 30px;
+    background-color: #4b79dd;
+}
+
+.container-form .form-control {
+    width: 100%;
+}
+
+.container-form .btn-primary {
+    width: 100%;
+}
+
+.container-form .form-row {
+    justify-content: center;
+
+}
+
+.container-form .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.card-image {
+    height: 600px;
+}
+
+.card-custom {
+
+    text-shadow: 0 0 3px #0e0d0d, 0 0 2px #121213;
+}
+
+footer {
+    background-color: #FAC102;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.ftco-footer-social .icon {
+    font-size: 24px;
+}
+
+
+.ftco-footer a {
+    color: white;
+}
+
+#formas-pagamento{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #0077be, #3b8df2);
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation: form-animation 0.5s ease-in-out;
+  }
+  
+  @keyframes form-animation {
+    from {
+      transform: rotateX(-30deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
