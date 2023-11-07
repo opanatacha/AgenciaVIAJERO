@@ -25,6 +25,14 @@
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
     <script src="javascript/contatos.js" defer></script>
+    <script src="javascript/cadastro.js" defer></script>
+    <script>
+        function exibirAlertaCadastro() {
+
+        alert("Cadastro realizado com sucesso. Seja bem-vindo(a) a Agência VIAJERO!");
+
+    }
+    </script>
 </head>
 
 <body class="body-estilo">
@@ -107,36 +115,37 @@
         <p class="text-light text-center">Insira suas informações nos campos abaixo</strong></p>
         <div class="form-row">
             <div class="form-group">
-                <label for="nome">Nome:</label> <input type="text"
+                <label for="nome">Nome:</label> <input type="text" placeholder="Nome e sobrenome"
                                                        class="form-control" id="nome" name="nome" value="${usuario.nome}" required>
             </div>
             <div class="form-group">
-                <label for="cpf">CPF:</label> <input type="text"
+                <label for="cpf">CPF:</label> <input type="text" placeholder="Apenas números"
                                                      class="form-control" id="cpf" name="cpf" value="${usuario.cpf}" required>
             </div>
             <div class="form-group">
-                <label for="dataNascimento">Data de Nascimento:</label> <input type="date"
+                <label for="dataNascimento">Data de Nascimento:</label> <input type="date" placeholder="Ex.: 01/01/1999"
                                                                                class="form-control" id="dataNascimento" name="dataNascimento"
                                                                                value="${usuario.dataNascimento}" required>
             </div>
             <div class="form-group">
-                <label for="telefone">Telefone:</label> <input type="text"
+                <label for="telefone">Telefone:</label> <input type="text" placeholder="Apenas números"
                                                                class="form-control" id="telefone" name="telefone"
                                                                value="${usuario.telefone}" required>
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label> <input
-                    type="text" value="${usuario.email}" class="form-control" id="email"
+                    type="text" placeholder="Ex.: seunome@dominio.com"
+                    value="${usuario.email}" class="form-control" id="email"
                     name="email" required>
             </div>
             <div class="form-group">
-                <label for="senha">Senha:</label> <input type="password"
+                <label for="senha">Senha:</label> <input type="password" placeholder="No mínimo 8 caracteres com letras e números"
                                                          class="form-control" id="senha" name="senha"
                                                          value="${usuario.senha}" required>
             </div>
 
             <div class="text-center center-button botao-form">
-                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <button onclick="javascript:exibirAlertaCadastro()" class="btn btn-primary" type="submit">Cadastrar</button>
             </div>
         </div>
     </form>

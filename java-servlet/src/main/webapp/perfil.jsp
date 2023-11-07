@@ -25,6 +25,13 @@
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
     <script src="javascript/contatos.js" defer></script>
+    <script>
+        function exibirAlertaExclusao() {
+            if (confirm("Tem certeza que deseja excluir sua conta?")) {
+                alert("Que pena :( sentiremos sua falta. Obrigada por utilizar a Agência VIAJERO!");
+            }
+        }
+    </script>
 </head>
 
 <body class="body-estilo">
@@ -134,7 +141,8 @@
 <%--        <button type="submit" class="btn btn-success text-light" href="UpdateController?id=${usuario.id}">Atualizar</button>--%>
 <%--        <button type="submit" class="btn btn-danger text-light" href="DeleteController?id=${usuario.id}">Excluir</button>--%>
             <a href="UpdateController?id=${usuario.id}" class="btn btn-success">Editar</a>
-            <a href="DeleteController?id=${usuario.id}" class="btn btn-danger">Excluir</a>
+            <a href="DeleteController?id=${usuario.id}" onclick="javascript:exibirAlertaExclusao()"
+               class="btn btn-danger">Excluir</a>
     </form>
 </div>
 

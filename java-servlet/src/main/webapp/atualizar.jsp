@@ -25,6 +25,13 @@
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
     <script src="javascript/contatos.js" defer></script>
+    <script>
+        function exibirAlertaEdicao() {
+
+            alert("Dados atualizados com sucesso!");
+
+        }
+    </script>
 </head>
 
 <body class="body-estilo">
@@ -132,7 +139,8 @@
                                                      value="${usuario.senha}" >
             <br>
         </div>
-        <button type="submit" class="btn btn-success text-light" href="UpdateController?id=${usuario.id}">Atualizar</button>
+        <button onclick="javascript:exibirAlertaEdicao()" type="submit" class="btn btn-success text-light"
+                href="UpdateController?id=${usuario.id}">Atualizar</button>
     </form>
 </div>
 
